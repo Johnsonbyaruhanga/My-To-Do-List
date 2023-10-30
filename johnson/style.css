@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #E2725B;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .box {
+    width: 450px;
+    height: 550px;
+    border-radius: 30px;
+    background: #94B0DA;
+    padding: 30px 50px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+      10px 10px 70px rgba(0, 0, 0, 0.25),
+      inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+      inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+      inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+  }
+  
+  h2 {
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.75em;
+    margin-bottom: 10px;
+    color: #2F363E;
+  }
+  
+  #inputBox {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    border-radius: 30px;
+    font-size: 1em;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  li {
+    width: calc(100% - 40px);
+    display: flex;
+    background: #B7C0EE;
+    margin: 15px 0;
+    padding: 10px;
+    min-height: 45px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25), inset 2px 2px 5px rgba(0, 0, 0, 0.5),
+      inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    overflow-y: auto;
+  }
+  
+  li.checked {
+    text-decoration: line-through;
+  }
+  
+  li span {
+    flex: 1;
+    text-align: right;
+  }
+  
+  li i {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  
+  li .fa-pen {
+    background-color: #008CBA;
+  }
+  
+  li .fa-trash {
+    background-color: #FF5252;
+  }
+  
